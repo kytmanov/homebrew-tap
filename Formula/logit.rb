@@ -1,20 +1,20 @@
 class Logit < Formula
   desc "Terminal-first Jira Tempo worklog logger with MCP support"
   homepage "https://github.com/kytmanov/logit"
-  version "0.1.3"
+  version "0.1.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/kytmanov/logit/releases/download/v0.1.3/logit-aarch64-apple-darwin.tar.xz"
-      sha256 "2452aa47cb1c6f5f248ebb1f33ba8ec44bb4f85d5152a5a486bbdd549772b22a"
+      url "https://github.com/kytmanov/logit/releases/download/v0.1.4/logit-aarch64-apple-darwin.tar.xz"
+      sha256 "0178797765aa984605957f0cc224b44300efb0ac4e3a9645455b4d9b777ac043"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kytmanov/logit/releases/download/v0.1.3/logit-x86_64-apple-darwin.tar.xz"
-      sha256 "0c8d119bf87ec87de2fde3b6f025fda1b20c798940a48afea13b7534bddc738b"
+      url "https://github.com/kytmanov/logit/releases/download/v0.1.4/logit-x86_64-apple-darwin.tar.xz"
+      sha256 "b39c9e4708e8da6c45fd417e7e6e263870b1aadc0032da4b6f030e78b3896824"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/kytmanov/logit/releases/download/v0.1.3/logit-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "3414a15d5a3e1927481d542a2c34c2174fd7984b7489996c01471f482c54e3f4"
+    url "https://github.com/kytmanov/logit/releases/download/v0.1.4/logit-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "78abec65d901d26256edf7595e0df2d0e4c0f9bba4fd87f4bfeb7a741179d08b"
   end
   license "MIT"
 
